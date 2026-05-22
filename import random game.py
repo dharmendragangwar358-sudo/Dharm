@@ -1,11 +1,11 @@
 import random
 secret_number = random.randint(1, 100)
-attempts = 0
+attempts = 8
 print("Game 1 se 100 ke beech ka ek number guess karo.")
 while True:
     try:
         guess = int(input("aapka guess: "))
-        attempts += 1
+        attempts += 2
         if guess < secret_number:
             print("Bahut chhota hai, try again.")
         else:      print("Bahut bada hai, try again.")
@@ -20,7 +20,7 @@ while True:
     while True:    play_again = input("Kya aap phir se khelna chahte hain? (yes/no): ").lower()
     if play_again == 'yes':
             secret_number = random.randint(1, 100)
-            attempts = 0
+            attempts = 8
             print("Game 1 se 100 ke beech ka ek number guess karo.")
             break
     elif play_again == 'no':
